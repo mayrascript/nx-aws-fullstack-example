@@ -7,7 +7,7 @@ applications:
             - yarn add @angular-devkit/build-angular --dev
         build:
           commands:
-            - npm run build:prod
+            - yarn build:web
       artifacts:
         baseDirectory: '../../../dist/apps/hello-world'
         files:
@@ -15,3 +15,18 @@ applications:
       cache:
         paths: []
     appRoot: apps/hello-world/src
+  - backend:
+      phases:
+        build:
+          commands:
+            - yarn build:api
+        postBuild:
+          commands:
+            - yarn start:api
+        artifacts:
+          baseDirectory: '../../../dist/apps/api'
+          files:
+            - '**/*'
+        cache:
+          paths: [ ]
+        appRoot: apps/api/src
