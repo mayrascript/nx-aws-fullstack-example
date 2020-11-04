@@ -1,0 +1,17 @@
+{
+  "projectName": "awsfullstacktest",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "angular",
+    "config": {
+      "SourceDir": "apps/hello-world",
+      "DistributionDir": "dist/apps/hello-world",
+      "BuildCommand": "npm run build:prod",
+      "StartCommand": "ng serve"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
