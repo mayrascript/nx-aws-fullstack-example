@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "awsfullstacktest0516e322",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/items"
+        }
+    ],
+    "resourceName": "nestjs",
+    "apiName": "nestjs",
+    "functionArns": [
+        {
+            "lambdaFunction": "awsfullstacktest0516e322"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-awsfullstacktest-dev-201232-authRole",
+        "unAuthRoleName": "amplify-awsfullstacktest-dev-201232-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "awsfullstacktest0516e322",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
